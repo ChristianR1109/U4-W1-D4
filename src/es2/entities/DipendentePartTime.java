@@ -2,6 +2,8 @@ package es2.entities;
 
 import interfaces.Start;
 
+import java.time.LocalDateTime;
+
 public class DipendentePartTime extends Dipendente implements Start {
 
     private int oreDiLav;
@@ -27,6 +29,6 @@ public class DipendentePartTime extends Dipendente implements Start {
 
     @Override
     public void checkin() {
-        System.out.println("Turno di lavoro iniziato alle ore : 14");
+        System.out.println("Turno di lavoro iniziato alle ore : " + LocalDateTime.now());
     }
 }

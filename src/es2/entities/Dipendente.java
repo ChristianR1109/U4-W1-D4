@@ -16,7 +16,7 @@ public abstract class Dipendente implements Start {
 
     protected Dipendente() {
     }
-
+    
 
     abstract public void calculateSalary();
 

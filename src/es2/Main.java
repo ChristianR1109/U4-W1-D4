@@ -1,6 +1,7 @@
 package es2;
 
 import es2.entities.*;
+import interfaces.Start;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -14,10 +15,10 @@ public class Main {
 
         Volontario Franco = new Volontario("Franco", 22, "CV1");
         Volontario Ernesto = new Volontario("Ernesto", 31, "CV2");
-        Dipendente[] dipendenti = {Giacomino, Sandro, Mario, Franco, Ernesto};
+        Start[] dipendenti = {Giacomino, Sandro, Mario, Franco, Ernesto};
         for (int i = 0; i < dipendenti.length; i++) {
-            dipendenti[i].parla();
-            dipendenti[i].calculateSalary();
+        
+
             dipendenti[i].checkin();
         }
     }
